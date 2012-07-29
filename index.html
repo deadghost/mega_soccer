@@ -24,6 +24,11 @@
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
+
+	<!-- Javascript
+  ================================================== -->
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/img_preview.js"></script>
 	
 	<!-- Favicons
 	================================================== -->
@@ -39,7 +44,7 @@
   <div class="container">
     <div class="three columns sidebar">
       <nav>
-      <h1>Mega Soccer</h1>
+        <h1 id="logo">Mega Soccer</h1>
         <ul>
           <li><a href="#balls">Balls</a></li>
           <li><a href="#shoes">Shoes</a></li>
@@ -47,64 +52,79 @@
           <li><a href="#socks">Socks</a></li>
           <li><a href="#shorts">Shorts</a></li>
         </ul>
+        <div id="contact">
+          <h2 id="contact">Contact:</h2>
+          <ul>
+            <li>Alejandra<br />
+            (909)576-9884</li>
+            <li>7407 Riverside Dr.<br />
+            Ontario CA, 91761<br />
+            Martes espacio: O-4<br />
+            Sabado espacio: S-15</li>
+          </ul>
       </nav>
       &nbsp;<!--Makes line-height for div to go into effect-->
     </div>
     <div class="twelve columns offset-by-one content">
       <header>
         <h2 id="slogan">Para Ti Que Amas El Futbol</h2>
-        <hr>
+        <hr class="large">
       </header>
-      <section id="balls">
+      <div id="balls">
         <h3>Soccer Balls</h3>
         <ul class="horizontal_list">
-          <li><img src="imgs/ball.jpg" alt="" width=50 height=50 /></li>
-          <li><img src="imgs/ball.jpg" alt="" width=50 height=50 /></li>
-          <li><img src="imgs/ball.jpg" alt="" width=50 height=50 /></li>
-          <li><img src="imgs/ball.jpg" alt="" width=50 height=50 /></li>
-          <li><img src="imgs/ball.jpg" alt="" width=50 height=50 /></li>
-        </ul>
-      </section>
-      <section id="shoes">
-        <h3>Soccer Shoes</h3>
-        <ul class="horizontal_list">
-          <li><img src="imgs/ball.jpg" alt="" width=50 height=50 /></li>
+          <li><a href="imgs/ball.jpg" class="preview"><img src="imgs/ball.jpg"
+            alt="" width=50 height=50 /></a></li>
           <li><img src="imgs/ball.jpg" alt="" width=50 height=50 /></li>
           <li><img src="imgs/ball.jpg" alt="" width=50 height=50 /></li>
           <li><img src="imgs/ball.jpg" alt="" width=50 height=50 /></li>
           <li><img src="imgs/ball.jpg" alt="" width=50 height=50 /></li>
         </ul>
-      </section>
-      <section id="jerseys">
-        <h3>Soccer Jerseys</h3>
-        <ul class="horizontal_list">
-          <li><img src="imgs/ball.jpg" alt="" width=50 height=50 /></li>
-          <li><img src="imgs/ball.jpg" alt="" width=50 height=50 /></li>
-          <li><img src="imgs/ball.jpg" alt="" width=50 height=50 /></li>
-          <li><img src="imgs/ball.jpg" alt="" width=50 height=50 /></li>
-          <li><img src="imgs/ball.jpg" alt="" width=50 height=50 /></li>
-        </ul>
-      </section>
-      <section id="socks">
-        <h3>Soccer Socks</h3>
-        <ul class="horizontal_list">
-          <li><img src="imgs/ball.jpg" alt="" width=50 height=50 /></li>
-          <li><img src="imgs/ball.jpg" alt="" width=50 height=50 /></li>
-          <li><img src="imgs/ball.jpg" alt="" width=50 height=50 /></li>
-          <li><img src="imgs/ball.jpg" alt="" width=50 height=50 /></li>
-          <li><img src="imgs/ball.jpg" alt="" width=50 height=50 /></li>
-        </ul>
-      </section>
-      <section id="shorts">
-        <h3>Soccer Shorts</h3>
-        <ul class="horizontal_list">
-          <li><img src="imgs/ball.jpg" alt="" width=50 height=50 /></li>
-          <li><img src="imgs/ball.jpg" alt="" width=50 height=50 /></li>
-          <li><img src="imgs/ball.jpg" alt="" width=50 height=50 /></li>
-          <li><img src="imgs/ball.jpg" alt="" width=50 height=50 /></li>
-          <li><img src="imgs/ball.jpg" alt="" width=50 height=50 /></li>
-        </ul>
-      </section>
+      </div>
+      <!--<hr>-->
+      <!--<div id="shoes" class="clearfix">-->
+        <!--<h3>Soccer Shoes</h3>-->
+        <!--<ul class="horizontal_list">-->
+          <!--<li><img src="imgs/ball.jpg" alt="" width=50 height=50 /></li>-->
+          <!--<li><img src="imgs/ball.jpg" alt="" width=50 height=50 /></li>-->
+          <!--<li><img src="imgs/ball.jpg" alt="" width=50 height=50 /></li>-->
+          <!--<li><img src="imgs/ball.jpg" alt="" width=50 height=50 /></li>-->
+          <!--<li><img src="imgs/ball.jpg" alt="" width=50 height=50 /></li>-->
+        <!--</ul>-->
+      <!--</div>-->
+      <!--<hr>-->
+      <!--<div id="jerseys" class="clearfix">-->
+        <!--<h3>Soccer Jerseys</h3>-->
+        <!--<ul class="horizontal_list">-->
+          <!--<li><img src="imgs/ball.jpg" alt="" width=50 height=50 /></li>-->
+          <!--<li><img src="imgs/ball.jpg" alt="" width=50 height=50 /></li>-->
+          <!--<li><img src="imgs/ball.jpg" alt="" width=50 height=50 /></li>-->
+          <!--<li><img src="imgs/ball.jpg" alt="" width=50 height=50 /></li>-->
+          <!--<li><img src="imgs/ball.jpg" alt="" width=50 height=50 /></li>-->
+        <!--</ul>-->
+      <!--</div>-->
+      <!--<hr>-->
+      <!--<div id="socks" class="clearfix">-->
+        <!--<h3>Soccer Socks</h3>-->
+        <!--<ul class="horizontal_list">-->
+          <!--<li><img src="imgs/ball.jpg" alt="" width=50 height=50 /></li>-->
+          <!--<li><img src="imgs/ball.jpg" alt="" width=50 height=50 /></li>-->
+          <!--<li><img src="imgs/ball.jpg" alt="" width=50 height=50 /></li>-->
+          <!--<li><img src="imgs/ball.jpg" alt="" width=50 height=50 /></li>-->
+          <!--<li><img src="imgs/ball.jpg" alt="" width=50 height=50 /></li>-->
+        <!--</ul>-->
+      <!--</div>-->
+      <!--<hr>-->
+      <!--<div id="shorts" class="clearfix">-->
+        <!--<h3>Soccer Shorts</h3>-->
+        <!--<ul class="horizontal_list">-->
+          <!--<li><img src="imgs/ball.jpg" alt="" width=50 height=50 /></li>-->
+          <!--<li><img src="imgs/ball.jpg" alt="" width=50 height=50 /></li>-->
+          <!--<li><img src="imgs/ball.jpg" alt="" width=50 height=50 /></li>-->
+          <!--<li><img src="imgs/ball.jpg" alt="" width=50 height=50 /></li>-->
+          <!--<li><img src="imgs/ball.jpg" alt="" width=50 height=50 /></li>-->
+        <!--</ul>-->
+      <!--</div>-->
 
     </div>
   </div>
