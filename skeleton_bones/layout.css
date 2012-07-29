@@ -95,6 +95,9 @@ hr.large {
             font-size: 34px; 
             line-height: 37px;
         }
+        #contact { margin-top: 20px; }
+        #contact h2 { display: none; }
+        #contact ul { display: block; }
     }
 
 	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
