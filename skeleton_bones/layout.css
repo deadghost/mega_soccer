@@ -48,19 +48,29 @@ h3 {
 ================================================== */
 
 	/* Smaller than standard 960 (devices and browsers) */
-	@media only screen and (max-width: 959px) {}
+	@media only screen and (max-width: 959px) {
+    body { background: blue };
+  }
 
 	/* Tablet Portrait size to standard 960 (devices and browsers) */
-	@media only screen and (min-width: 768px) and (max-width: 959px) {}
+	@media only screen and (min-width: 768px) and (max-width: 959px) {
+    body { background: red };
+  }
 
 	/* All Mobile Sizes (devices and browser) */
-	@media only screen and (max-width: 767px) {}
+	@media only screen and (max-width: 767px) {
+    body { background: pink };
+  }
 
 	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-	@media only screen and (min-width: 480px) and (max-width: 767px) {}
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+    body { background: orange };
+  }
 
 	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-	@media only screen and (max-width: 479px) {}
+	@media only screen and (max-width: 479px) {
+    body { background: violet };
+  }
 
 
 /* #Font-Face
